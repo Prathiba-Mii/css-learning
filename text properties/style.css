@@ -1,0 +1,61 @@
+/* text properties in css
+
+text - alignment (text which side - center,left,right)
+text - decoration (underline,overline,linethrough
+text-transform
+letter spacing,line height,word spacing
+
+text-shadow : 2px 2px 1px blue;[(offset-x(shadow) offset-y(vertically) Blur-radius(blur making) color]*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+   text-align: right;
+   text-decoration-line: underline ;
+   text-decoration-color: red ;
+   text-decoration-thickness: 8px;
+   text-decoration-style: wavy;
+   text-transform: uppercase;
+   text-shadow: -2px -2px 5px red;
+  
+}
+
+body{
+ background-color: palevioletred;
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.hero-section{
+  width: 50%;
+  font-size: 54px;
+  font-weight: 900;
+}
+
+p{
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  word-spacing: 1px;
+  line-height: 1.56;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+p::first-letter{
+  /* It is for making first letter uppercase */
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: 600;
+}

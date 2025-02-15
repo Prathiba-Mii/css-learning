@@ -1,0 +1,60 @@
+
+
+/* 01.overflow:Visible (Default)
+02. Overflow :Hidden 
+03.Overflow: Scroll
+04.Overflow : Auto*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+#main-heading {
+  font-size: 6.2rem;
+  color:#1e1403;
+  margin:3rem 0;
+}
+
+p{
+  line-height: 40px;
+  font-size: 2rem;
+}
+
+.Overflow-div {
+  width: 600px;
+  height: 300px;
+  box-shadow: rgba(0,0,0,0.5) 0px 6px 24px 0px;
+  border: 5px solid #9eb384;
+  padding: 10px;
+  /* overflow: hidden; */
+  /* overflow-x: scroll; */
+  /* overflow-y: scroll; */
+  /* white-space: nowrap; */
+  /* overflow: scroll; */
+  overflow: auto;
+}
+
+.Overflow-div-2 {
+  width: 600px;
+  height: 300px;
+  box-shadow: rgba(0,0,0,0.5) 0px 6px 24px 0px;
+  border: 5px solid #9eb384;
+  padding: 10px;
+  /* overflow: hidden; */
+}

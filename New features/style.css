@@ -1,0 +1,159 @@
+/* 01. :is,has:not,:where
+02. Media query range syntax
+03. Container queries
+04. Accent-color
+05. Aspect ratio
+06. Scroll snap
+07. Individual Transform Property
+08. Css Nesting
+09. Gap Property for FlexBox
+10. Css Logical Properties(inline and block)
+11. Css Writing Mode
+12. :focus-visible*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+html{
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2,1fr);
+}
+
+/* .hero-content h1{
+  font-size: 42px;
+  text-align: left;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+} */
+
+img {
+  max-width: 80%;
+  height: auto;
+  transition: scale 1s linear;
+}
+img:hover {
+  scale: 1.2;
+}
+
+a{
+  background-color: transparent;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 5px solid #fff;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+
+  /* transition starts here */
+  transition-property:width;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+  /* background-color: #fff; */
+  /* transition:width ,color,background-color 1s linear 2s; */
+}
+
+
+.hero-content a:hover {
+  background-color: #fff;
+  color: #000;
+  width: 400px;
+  box-shadow: rgba(255,255,255,0.8) 0px 19px 38px,
+  rgba(255,255,255,0.5) 0px 15px 12px;
+}
+
+h1{
+  /* border: 5px solid red; */
+  /* border-top: 5px solid red; */
+  /* border-bottom: 5px solid red; */
+  /* border-left: 5px solid yellow; */
+  /* border-right: 5px solid yellow; */
+  border-inline: 5px solid yellow;
+  border-block: 5px solid red;
+}
+
+.hero-content {
+
+ & h1{
+  font-size: 42px;
+  text-align: left;
+  text-align: center;
+  writing-mode: vertical-lr;
+  position: absolute;
+  left: 50%;
+  &::before {
+    content: "* ";
+  }
+  &::after {
+    content: " * ";
+  }
+}
+
+ & p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+ }
+}
+
+/* :is is used for repeating elements
+
+ul li,
+ol li,
+dl li {
+  color:red;
+}
+
+:is(ul,ol,dl)li {
+   color:red;
+}
+
+//or
+
+ul li,
+ul a,
+ul p {
+  color:red;
+}
+
+ul:is(li,a,p) {
+   color:red;
+}
+
+  //where also same but only specificity only different
+  is have more specificity compared to where //write where in the place of is
+  has --->condition it have like that   , not is for dont have
+  container queries used in responsiveness
+  its like media query */

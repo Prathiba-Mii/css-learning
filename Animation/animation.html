@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      /* background-color: #2b3033; */
+      background-image:linear-gradient(
+        to right,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.1)
+      ),
+       url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcd0U1FQmz_MaewmfL2DzEhFgWetlgvXyIUQ&s);
+      background-repeat: no-repeat;
+      background-size: 100%  100%;
+    }
+    img{
+      width: 400px;
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      animation: mariorun 2s linear infinite alternate;
+      /* animation-iteration-count: 2; */
+    }
+    @keyframes mariorun{
+      0% {
+        /* transform:translateX(0px); */
+        left: 0;
+      }
+      100% {
+        /* transform:translateX(calc(100vw-400px)); */
+        left: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="https://i.pinimg.com/originals/08/f0/3c/08f03c7811a2183dc018e1444ba4c602.gif" alt="mario run">
+</body>
+</html>

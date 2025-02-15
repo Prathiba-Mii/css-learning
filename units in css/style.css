@@ -1,0 +1,31 @@
+/* Absolute lengths (its fixed length:
+1.Pexels (px)[smallest unit of the screen[1px = 6.25%]], 02. Inches (in) , 03. Points(pt)
+Relative Lengths (it can change ) :
+01. em , 02. Root em (rem)  , 03.Percentage(%) 
+
+1 em = 16px;*/
+
+body{
+  background-color: #fff;
+}
+
+h1{
+  font-size: 54px;
+  /* font-size: 3.375em; */
+  /* font-size: 337.5%; */
+  color: purple;
+}
+
+p{
+  font-size: 36px;
+}
+
+.parent{
+  font-size: 10px;
+}
+/* now parent fontsize is 10px then relative its child also gets that only */
+
+li{
+  /* font-size: 44px; */
+  font-size: 2.75em;
+}

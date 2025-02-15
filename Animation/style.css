@@ -1,0 +1,93 @@
+
+/* 01.animation-name
+02.animation-duration
+03.animation-timing-function
+04.animation-delay
+05.animation-iteration-count 
+06.animation-direction 
+**keyframe imp
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html{
+  font-size: 48px;
+  background-color: #575151;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: #4861ec;
+  box-shadow: 0 0 0px 15px #352f6d;
+  margin: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  /* Animation starts from here */
+
+  animation-name: trip;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  /* animation-delay: 2s; */
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+  /* animation-direction: alternate-reverse; */
+  /* animation-fill-mode: backwards; */
+}
+/* 
+@keyframes lefttoright {
+  from {
+    translate:0%;
+  }
+  to {
+    translate:90vw
+     translate: calc(90vw-100px); 
+  }
+} */
+
+
+@keyframes lefttoright {
+  0% {
+    translate:0%;
+  }
+  50% {
+    translate: 50vw 50vh;
+  }
+  100% {
+    translate:90vw
+    /* translate: calc(90vw-100px); */
+  }
+}
+
+@keyframes trip {
+  0%{
+      background-color:#ffbb5cb5;
+      transform:translate(200px,0%);
+  }
+
+  25% {
+    background-color: #fcbf49;
+    transform: translate(calc(90vw - 10%));
+  }
+  50% {
+    background-color: #000;
+    transform: translate(calc(90vw - 10%),500px);
+  }
+  75% {
+    background-color: #fcbf49;
+    transform: translate(calc(20%,500px));
+  }
+  100% {
+    background-color: #fcbf49;
+    transform: translate(calc(20%,0%));
+  }
+
+
+
+
+}

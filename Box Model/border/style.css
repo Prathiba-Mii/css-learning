@@ -1,0 +1,52 @@
+html{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#main-heading {
+  font-size: 64px;
+  color: palevioletred;
+}
+
+p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height:1.5 ;
+  
+
+}
+
+.section-border {
+  width: 1000px;
+  color: #000;
+  /* background-color: skyblue; */
+  /* border: 154px solid darkblue;   for oneline */
+  /* border-width: 15px; */
+  /* border-style: solid; */
+  /* for individual values */
+  /* border-color: darkblue ; */
+
+  border-top: 15px solid darkblue;
+  border-right: 15px dotted red;
+  border-bottom: 15px ridge green;
+  border-left: 15px double darkmagenta;
+}
+
+/* border radius  gives shape for border like circle*/
+
+div {
+  width: 500px;
+  height: 500px;
+  background-color: palevioletred;
+  /* border-radius: 100px 10px 250px 0px; */
+  border-radius: 50%;
+  /* both height width should be equal for circle */
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}

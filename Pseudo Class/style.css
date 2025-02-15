@@ -1,0 +1,93 @@
+
+/* 01> :hover
+02> :first-child
+03> :last-child
+04> :nth-child()
+05> :first-of-type
+06> :last-of-type */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body{
+  color: azure;
+  height: 100vh;
+}
+
+.hero-section {
+  background-color: #080a0c;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.hero-content a:link {
+  color: rgb(10,10,10);
+}
+
+.hero-content a:visited {
+  color: #d67e03;
+}
+
+.hero-content a:hover {
+  color: #0062ff;
+}
+
+.hero-content a:active {
+  color: #f31559;
+}
+
+
+/* .content-1:first-child {
+  color: red;
+} */
+
+/* .content-1 ul:first-child {
+  color: red;
+} */
+
+ .content-1 p:first-child {
+  color: red;
+ } 
+
+ /* .content-1 p:last-child {
+  color: purple;
+ }  */
+
+ /* .content-1 li:nth-of-type(1) {
+     color: red;
+ } */
+
+ .content-1 li:first-of-type{ 
+  color: blue;
+ }
+
+ .content-1 li:last-of-type {
+  color: blue;
+ }
+
+ .content-1 li:nth-of-type(2) {
+  color: green;
+ }
+
+ .content-1 li:nth-of-type(4) {
+  color: red;
+ }
+
+ .content-2 li:nth-of-type(even) {
+  color: #f31559;
+ }
+
+ .p-class:nth-child(odd) {
+  color: #d67e03;
+ }

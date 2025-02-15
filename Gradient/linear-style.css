@@ -1,0 +1,53 @@
+/* background-image : linear-gradient(red,yellow);//property, color-stop1,color-stop2
+from where which direction it should go like to right-> or u can go with degrees  */
+/* linear gradient makes line , radial gradient makes circular effect */
+
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  /* background-image: linear-gradient(red,yellow); // for normal top to bottom */
+  /* background-image: linear-gradient(to left ,red,yellow); to show direction go to right side */
+  /* background-image: linear-gradient(to top ,red,yellow); */
+  /* background-image: linear-gradient(90deg,red,yellow); to right shows */
+  /* background-image: linear-gradient(180deg,red,yellow); top to bottom */
+  /* background-image: linear-gradient(270deg,red,yellow); */
+  /* background-image: linear-gradient(to bottom right,red,yellow); */
+  /* background-image: linear-gradient(to top left,red,yellow); */
+  /* background-image: linear-gradient(
+    to right,
+    rgba(255,0,0,0.5),
+    rgba(255,0,0,0.5)
+  ); */
+
+  /* background-image: linear-gradient(
+  /*  this is for multiple colors */
+    /* to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+    ); */ 
+
+    /* background-image: repeating-linear-gradient(45deg,#d2e0fb,#79ac78 45px); */
+/* repeating we use repeating linear gradient in this we should give px value  */
+
+background-image: linear-gradient(
+  to right top,
+  rgba(5,25,55,0.6),
+  rgba(0,77,122,0.6),
+  rgba(0,135,147,0.6),
+  rgba(0,191,114,0.6),
+  rgba(168,235,18,0.6)
+),
+url("https://static.vecteezy.com/system/resources/thumbnails/035/311/040/small_2x/ai-generated-beautiful-flowers-in-the-grass-at-sunset-creating-a-picturesque-scene-of-nature-s-vibrant-colors-and-serene-ambiance-generative-ai-photo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}

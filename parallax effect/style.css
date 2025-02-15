@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+}
+
+
+h2{
+  font-size: 64px;
+  color: #fff;
+  font-family: "Urbanist",serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 2px 2px5px #000 ;
+}
+p{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Urbanist",serif;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px5px #000 ;
+}
+li{
+  font: size 44px; 
+}

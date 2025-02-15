@@ -1,0 +1,51 @@
+
+/* 01.column-count
+02.column-gap
+03.column-rule
+04.column-fill */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+body{
+  background-color: hsl(0,0%,94%);
+  display: grid;
+  place-items: center;
+}
+
+.hero-section {
+  margin-top: 100px;
+  width: 60%;
+}
+
+h1{
+  font-size: 54px;
+  font-weight: 900;
+  text-align: left;
+  text-decoration-style: double;
+  text-decoration-color: #61677a;
+  text-decoration-thickness:2px;
+  margin: bottom 24px; 
+}
+
+p{
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 1.6;
+}
+
+p{
+  column-count: 3;
+  column-rule:4px solid red;
+  /* column-rule-color:red ;
+  column-rule-style: dotted;
+  column-rule-width: 10px; */
+  column-gap: 50px;
+  text-align: justify;
+}

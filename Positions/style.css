@@ -1,0 +1,87 @@
+
+/* Positions in css :--
+01.Relative :gives to parent
+02.Absolute : it gives to childs 
+03.Static : in this u cant use left right like this we have to mention margin left ,margin right like this && if one change other values places also changes 
+04.Fixed : fix rehthey [[position:fixed; top:0]] like thiss!
+05.Sticky : it will stick to it place if that div ends then it all goes  like this it works
+
+
+ */
+
+ 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+.parent-div{
+  width: 1000px;
+  height: 800px;
+  color: #fff;
+  background: linear-gradient(to right,#514a9d,#24c6dc);
+  box-shadow: rgba(0,0,0,0.1)0px 4px 12px;
+  border-radius: 15px;
+}
+
+.child {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to right,#93edc7,#1cd8d2);
+  box-shadow: rgba(100,100,111,0.2)0px 7px 29px 0px;
+  /* to make center */
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  color: #003180;
+}
+
+.child:nth-child(2),
+.child:nth-child(4) {
+  background: linear-gradient(to right,#3cd3ad,#4cb8c4);
+  box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+}
+
+.parent-div {
+  position: relative;
+  /* margin-left: 200px; */
+  /* psition relative if we wrote then if we write even left it works */
+  left: 300px;
+}
+
+.child {
+  position: absolute;
+}
+
+.child-2 {
+  top:0;
+  right: 0;
+}
+
+.child-3 {
+  bottom: 0;
+  right: 0;
+}
+
+.child-4{
+  bottom: 0;
+  left: 0;
+}
+
+.child-5 {
+  /* left: 425px;
+  top: 325px; */
+
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  /* it makes div center div--its very important */
+}

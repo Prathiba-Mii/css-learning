@@ -1,0 +1,110 @@
+/* 01>::before
+02>::after
+03>::first-letter
+04>::first-line
+05>::selection
+06>::placeholder */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+
+}
+
+body {
+  background-color: #080a0c;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.hero-content h1{
+  font-size: 48px;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  position: relative;
+}
+
+/* before Pseudo element */
+.hero-content h1::before {
+   /* content: "Prathiba Kamle"; */
+   content: "\f121";
+   font-family: "font awesome 6 free";
+   position: absolute;
+   top: -18px;
+   font-size: 24px;
+   letter-spacing: 6px;
+   color: #ffcc70;
+}
+
+/* after Pseudo element */
+.hero-content h1::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  border: 5px solid #ae445a;
+  width: 65%;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+.hero-content p::first-letter{
+  font-size: 48px;
+  color: #ae445a;
+  font-weight: bold;
+}
+
+.hero-content p::first-line{
+  /* font-size: 48px;
+  color: #ae445a;
+  font-weight: bold; */
+  text-decoration: underline;
+}
+
+.hero-content p::selection{
+  background-color: rgba(241, 158, 5, 0.5);
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+a{
+  background-color: transparent;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+}

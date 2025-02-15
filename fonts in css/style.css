@@ -1,0 +1,49 @@
+/* font properties in css
+
+Font Family
+Font size
+Font Weight
+Font Style
+Font Variant*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+   /* font-variant:small-caps ; */
+
+}
+
+body{
+ background-color: aquamarine;
+  /* background-color: hsl(0, 0%, 94%); */
+  display: grid;
+  place-items: center;
+  align-items: center;
+}
+
+.hero-section{
+  width: 50%;
+  font-size: 54px;
+  font-weight: 900;
+}
+
+p{
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 400;
+  /*da fonts lo font download control bactrick press - terminal open 
+  explorer.
+  then select ur font 
+  now it became custome font
+  then write @font-face {
+  font-family: //ur font give name;
+  src: url ("//give url "); */
+  /* fall back font : incase ur font not working there is another font present is there , we give 2,3 fonts if one is not displaying another will work 
+  minimum should give 2 fonts  */
+}

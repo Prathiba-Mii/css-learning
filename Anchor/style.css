@@ -1,0 +1,41 @@
+
+/* Anchor states :----
+01. Link(`a:link`)
+02. Visited (`a:visited')
+03.Hover (`a:hover`)
+04. Active (`a:active`)
+LVHA */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+body{
+  background-color: black;
+
+}
+button{
+  margin: 200px;
+  display: grid;
+  /* justify-content: center; */
+  place-items: center;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: palevioletred;
+  
+}
+
+button a:visited {
+   color: crimson;
+}
+
+button a:hover {
+  color: #0062ff;
+  background-color: gold;
+}
+
+button a:active {
+  color: darkred;
+}

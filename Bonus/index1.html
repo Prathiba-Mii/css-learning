@@ -1,0 +1,46 @@
+
+
+<!--  
+01. floats
+02. css clip path //adding different different shapes
+03. css Aos Plugin
+04. css shape divider
+05. scroll bar styling
+06. Website References -->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clip path</title>
+   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: hsl(0,0%,91%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      border-radius: 10px;
+    }
+    img{
+      width: 60%;
+      /* clip-path: polygon(0 0, 28% 100%,100% 79%); */
+       clip-path: polygon(20% 0%, 80% 0%,100% 20%,100% 80%, 80% 100% , 0% 80%, 0% 20%); 
+    }
+   </style>
+</head>
+<body>
+  <h1>CSS CLIP PATH</h1>
+  <img src="https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg" alt="butterfly">
+</body>
+</html>

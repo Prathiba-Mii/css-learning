@@ -1,0 +1,108 @@
+
+/* selectors in css
+ 01.*(universal selector)
+02.Element /pseudo element
+03. class or pseudo-class
+04. id
+05. inline style
+06. !important 
+
+//power goes priority wise high priority works first is from bottom to up 6,5,4,....,1
+and try to not use !important*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+  --main-color:#0062ff;
+  --supporting-color:#000;
+  --font-color:#000;
+  --timepass-color:#080a0c;
+}
+
+body{
+  /* background-color: #080a0c; */
+  background-color: var(--timepass-color) !important;
+  background-color: blueviolet;
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2,1fr);
+}
+
+.hero-content h1{
+  font-size: 42px;
+  text-align: left;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  transition: scale 1s linear;
+}
+img:hover {
+  scale: 1.2;
+}
+
+a{
+  /* background-color: transparent; */
+  /* background-color: #080a0c; */
+  background-color: var(--timepass-color);
+  border: 5px solid #fff;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 5px solid #fff;
+  color: #fff;
+  width: 200px;
+  text-align: center;
+
+  /* transition starts here */
+  transition-property:width;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+  /* background-color: #fff; */
+  /* transition:width ,color,background-color 1s linear 2s; */
+}
+
+
+.hero-content a:hover {
+  background-color: #fff;
+  color: #000;
+  width: 400px;
+  box-shadow: rgba(255,255,255,0.8) 0px 19px 38px,
+  rgba(255,255,255,0.5) 0px 15px 12px;
+}
